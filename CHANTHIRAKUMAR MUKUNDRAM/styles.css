@@ -1,0 +1,167 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+#theme-toggle, #scrollTopBtn {
+    position: fixed;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#theme-toggle {
+    top: 20px;
+    right: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #888;
+    color: #fff;
+}
+
+#scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    display: none;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.news-item {
+    width: 300px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.dark-mode .news-item {
+    background-color: #1e1e1e;
+    color: #eee;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-item h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.news-item p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.dark-mode .read-more {
+    background: #3388ff;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+header {
+    background-color: #dd3737;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+    background-color: #803333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+.famous-news {
+    padding: 2em;
+}
+
+hr {
+    display: block;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #333;
+}
+
+.emoji-sticker {
+    font-size: 24px;
+    background-color: #221919;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.emoji-sticker1 {
+    font-size: 48px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}

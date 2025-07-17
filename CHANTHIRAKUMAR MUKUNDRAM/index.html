@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M.T_NEWS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">🏠 HOME</a></li>
+             <li><a href="about.html">⚡ ABOUT</a></li>
+             <li><a href="news.html">🚀 ALL NEWS</a></li>
+             <li><a href="headlines.html">🔥 HEADLINES</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+
+    <main>
+        <h1>WELCOME TO MY NEWS FEED <span class="emoji-sticker">🤔</span></h1>
+        <p>"Stay informed, stay ahead. Your one-stop destination for the latest news and updates."</p>      
+        <hr>
+        <div class="emoji-line">
+            📖📖📖📖📖📖📖📖📖
+        </div>
+    </main>
+
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <button id="scrollTopBtn">⬆️ Top</button>
+
+    <section id="famous-news">
+        <h2 style="text-align: center; margin-bottom: 20px;"><span class="emoji-sticker">🔥</span>FLASH NEWS <span class="emoji-sticker">🔥</span></h2>
+        <div class="news-container">
+             <div class="news-item">
+    <img src="image11.avif">
+    <h3>India beat England by four wickets in WODI</h3>
+    <p>India secured a thrilling four-wicket win in the first Women’s ODI in Southampton, chasing 259 with 10 balls to spare.</p>
+    <a href="https://www.theguardian.com/sport/live/2025/jul/16/england-v-india-first-womens-cricket-odi-live?utm_source=chatgpt.com" class="read-more">MORE ABOUT</a>
+    
+  </div>
+
+  <div class="news-item"><img src="image12.jpeg">
+    <h3>Asia Cup 2025 under risk due to India, Sri Lanka</h3>
+    <p>Both cricket boards may skip ACC meeting in Dhaka, casting doubt on venue and squad participation.</p>
+    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.timesnownews.com/sports/cricket/asia-cup-2025-in-danger-after-india-sri-lanka-take-big-decision-report-article-152267358&ved=2ahUKEwipsP2S5cOOAxXrnmMGHaDbDGMQFnoECBwQAw&usg=AOvVaw1ZuU03AiFhFAQ8MlelJ9Cl" class="read-more">MORE ABOUT</a>
+    
+  </div>
+
+  <div class="news-item">
+  <img src="image13.jpg">
+    <h3>Sri Lanka sees tourism boom with Indian visitors</h3>
+    <p>Over 10.5 lakh arrivals by April, Indians top visitor list with 210,074 enries.</p>
+    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://travelbizmonitor.com/top-stories/sri-lanka-sees-tourist-boom-in-2025-india-tops-the-list/&ved=2ahUKEwjYtpa85cOOAxX2xTgGHQ56JtcQFnoECBcQAQ&usg=AOvVaw2rpj6eVitFb-_YDwIv8HPI" class="read-more">MORE ABOUT</a>
+    
+  </div>
+
+  <div class="news-item"><img src="image14.avif">
+    <h3>India-Sri Lanka Energy Hub Deal in Trincomalee</h3>
+    <p>India and UAE to develop strategic energy hub in Sri Lanka, strengthening ties amid China competition.</p>
+    <a href="https://timesofindia.indiatimes.com/india/india-uae-sri-lanka-sign-mou-to-develop-energy-hub-in-trincomalee-in-pushback-against-chinas-influence/articleshow/120015141.cms" class="read-more">MORE ABOUT</a>
+    
+  </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MUKUNDRAM-SJC(10A)</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            toggleButton.textContent = '☀️ Light Mode';
+        }
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+            toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = () => {
+            scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+        scrollTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
+</body>
+</html>
